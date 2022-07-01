@@ -13,8 +13,9 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('top');
 
+// ユーザ認証のルーティング
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
