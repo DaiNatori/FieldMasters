@@ -19,3 +19,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/photos/upload', 'PhotosController@showPhotoUploadForm')->name('photo_upload');
+
+// ログイン状態で表示されるようにmiddlewareを使用している
+// Route::middleware('auth')
+//     ->group(function () {
+//         Route::get('/photos/upload', 'PhotosController@showPhotoUploadForm')->name('photo_upload');
+//     });

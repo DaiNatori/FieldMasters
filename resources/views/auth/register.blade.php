@@ -56,7 +56,7 @@
 
                 <div class="form-group">
                     <button type="submit" class="btn btn-block btn-secondary">
-                        確定
+                        登録
                     </button>
                 </div>
 
